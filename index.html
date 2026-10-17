@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Independent Video — video and photo editor for Android</title>
+<meta name="description" content="A video editor and a layered photo editor for Android. No account, no uploads: everything stays on your phone. Made by Better App Mafia.">
+<meta property="og:title" content="Independent Video">
+<meta property="og:description" content="A video editor and a layered photo editor for Android. No account, no uploads.">
+<meta property="og:image" content="img/icon.png">
+<link rel="icon" href="img/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,400..800&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#000; --card:#0c0c0c; --line:#242424; --fg:#ededed; --body:#b9bdc6; --muted:#8a8a8a; --orange:#ff8a1e; --orange-line:rgba(255,138,30,.5); --orange-tint:rgba(255,138,30,.12); }
+  * { box-sizing:border-box; }
+  html, body { margin:0; background:var(--bg); color:var(--fg); }
+  body { font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing:antialiased; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 48px; }
+  a { color:var(--orange); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .display { font-family:"Archivo", system-ui, sans-serif; font-stretch:125%; }
+
+  /* the title in a viewfinder, as on the app's home screen */
+  .frame { position:relative; border:1px solid #1c1c1c; border-radius:8px; padding:18px 18px 20px; margin-top:16px; }
+  .frame i { position:absolute; width:24px; height:24px; border:0 solid var(--orange); }
+  .frame .tl { left:-1px; top:-1px; border-left-width:2px; border-top-width:2px; border-top-left-radius:8px; }
+  .frame .tr { right:-1px; top:-1px; border-right-width:2px; border-top-width:2px; border-top-right-radius:8px; }
+  .frame .bl { left:-1px; bottom:-1px; border-left-width:2px; border-bottom-width:2px; border-bottom-left-radius:8px; }
+  .frame .br { right:-1px; bottom:-1px; border-right-width:2px; border-bottom-width:2px; border-bottom-right-radius:8px; }
+  .frame img { display:block; width:100%; height:auto; margin:-4% 0 -5%; }
+  .caps { font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); }
+  .frame .caps { text-align:center; font-size:10px; letter-spacing:.11em; white-space:nowrap; }
+  @media (max-width:360px) { .frame .caps { white-space:normal; } }
+
+  .lead { font-size:18px; color:var(--body); margin:28px 0 10px; }
+  .status { display:inline-flex; align-items:center; gap:8px; border:1px solid var(--orange-line); color:var(--orange); border-radius:999px; padding:7px 14px; font-size:14px; }
+  .status::before { content:""; width:8px; height:8px; border-radius:50%; background:var(--orange); }
+
+  .modes { display:grid; grid-template-columns:1fr; gap:12px; margin:32px 0; }
+  @media (min-width:680px) { .modes { grid-template-columns:1fr 1fr; } }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:20px; }
+  .card h2 { margin:0 0 4px; font-size:24px; font-weight:750; color:#fff; display:flex; align-items:center; gap:12px; }
+  .badge { width:44px; height:44px; border-radius:12px; background:var(--orange-tint); border:1px solid var(--orange-line); display:inline-flex; align-items:center; justify-content:center; flex:none; }
+  .badge svg { width:22px; height:22px; stroke:var(--orange); fill:none; stroke-width:1.75; stroke-linecap:round; stroke-linejoin:round; }
+  .card p { color:var(--body); margin:8px 0 12px; font-size:15px; }
+  .card ul { margin:0; padding-left:18px; color:var(--body); font-size:14.5px; }
+  .card li { margin:4px 0; }
+  .card li::marker { color:var(--orange); }
+
+  section { margin:36px 0; }
+  section h3 { margin:0 0 8px; font-size:13px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); font-weight:500; }
+  section p { color:var(--body); margin:0 0 10px; }
+  .pill { display:inline-flex; align-items:center; gap:8px; border:1px solid var(--orange-line); border-radius:999px; padding:9px 16px; color:var(--orange); font-size:15px; }
+  .pill svg { width:16px; height:16px; fill:none; stroke:var(--orange); stroke-width:1.75; stroke-linejoin:round; }
+
+  footer { display:flex; align-items:center; gap:12px; border-top:1px solid #161616; margin-top:44px; padding-top:20px; }
+  footer img { width:48px; height:48px; }
+  footer .caps { line-height:1.4; }
+</style>
+</head>
+<body>
+<main>
+  <div class="frame">
+    <i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i>
+    <img src="img/wordmark.jpg" alt="Independent Video" width="1200" height="492">
+    <div class="caps">No account &nbsp;·&nbsp; No uploads &nbsp;·&nbsp; Stays on your phone</div>
+  </div>
+
+  <p class="lead">A video editor and a layered photo editor in one Android app, for vlogs, short films, music videos, edits for Reels and YouTube, and album art. There's no account and no sign-in, and the app has no internet access, so your footage, photos and projects stay on your phone.</p>
+  <span class="status">Coming soon to Google Play</span>
+
+  <div class="modes">
+    <div class="card">
+      <h2 class="display"><span class="badge"><svg viewBox="0 0 24 24"><path d="M3 6.5h12.5v11H3zM15.5 10.5L21 7v10l-5.5-3.5"/></svg></span>Video</h2>
+      <p>Cut, color, retime and title your footage. Add music, captions and sound.</p>
+      <ul>
+        <li>Multi-track timeline: frame-accurate trims, split, roll and slip, B-roll and picture-in-picture</li>
+        <li>Titles and captions, with SRT import and export</li>
+        <li>Speed from 0.1× to 10×, or speed curves you shape point by point</li>
+        <li>Color grading in layers: curves, levels, HSL, LUTs and built-in looks</li>
+        <li>Beat detection, and visualizers that follow the music</li>
+        <li>6-band EQ on every track, volume keyframes, fades and ducking</li>
+        <li>Export at 720p, 1080p or 4K, 24 to 60 fps</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2 class="display"><span class="badge"><svg viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 16l5-5 4 4 3-3 6 6M17 8.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 1 1 3 0z"/></svg></span>Photo</h2>
+      <p>Layers, masks, curves and effects. Heal, remove and edit RAW photos.</p>
+      <ul>
+        <li>Photo, text, fill and adjustment layers with blend modes, groups and clipping</li>
+        <li>Editable masks: brush, gradients, shapes, text and color ranges</li>
+        <li>Selections: lasso, polygon, magic wand, refine edge</li>
+        <li>Heal, clone and content-aware remove</li>
+        <li>Opens JPEG, PNG, WebP, HEIF and RAW (DNG); exports full-resolution JPEG or PNG</li>
+      </ul>
+    </div>
+  </div>
+
+  <section>
+    <h3>Privacy</h3>
+    <p>Independent Video collects nothing: no accounts, no ads, no analytics, no tracking. Your work never leaves your phone unless you export or share it yourself. <a href="privacy/">Read the privacy policy</a>.</p>
+  </section>
+
+  <section>
+    <h3>Support</h3>
+    <p>Independent Video is free, with no ads. If it's useful to you, you can tip on Ko-fi.</p>
+    <a class="pill" href="https://ko-fi.com/betterappmafia"><svg viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.2 4.2 0 0 1 12 7.3a4.2 4.2 0 0 1 7.5 2.5C19.5 15.4 12 20 12 20z"/></svg>Support on Ko-fi</a>
+  </section>
+
+  <section>
+    <h3>Contact</h3>
+    <p>Questions, bugs or ideas: <a href="mailto:cporter31415@gmail.com">cporter31415@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <img src="img/bam.png" alt="Better App Mafia">
+    <div class="caps">A Better App Mafia app<br>© 2026 Better App Mafia</div>
+  </footer>
+</main>
+</body>
+</html>
