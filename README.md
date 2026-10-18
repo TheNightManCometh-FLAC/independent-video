@@ -17,6 +17,14 @@
   <img src="https://img.shields.io/badge/open%20source-Java%20%2B%20OpenGL%20ES-111111?style=flat-square" alt="Open source">
 </p>
 
+<p align="center">
+  <a href="https://github.com/TheNightManCometh-FLAC/independent-video/releases/latest"><b>⬇ Download the APK</b></a> &nbsp;·&nbsp;
+  <a href="https://play.google.com/apps/testing/com.betterappmafia.independentvideo"><b>Join the Google Play beta</b></a> &nbsp;·&nbsp;
+  <a href="app/"><b>Source code</b></a>
+</p>
+
+> The GitHub APK and the Google Play version are signed differently, so Android won't install one over the other. Pick one. If you're joining the Play beta to help it reach 12 testers, use Play.
+
 ---
 
 ## 🎬 Looking for 12 beta testers
