@@ -1,0 +1,22 @@
+ok   No markers: format stays 14
+ok   Markers are kept in time order
+ok   Tapping on an existing marker's frame doesn't duplicate it
+ok   Markers bump the format to 16
+ok   Next marker after the playhead
+ok   Previous marker before the playhead
+ok   Sitting on a marker, next skips it
+ok   No marker past the last one
+ok   No marker before the first one
+ok   Markers survive save and reload
+ok   Undo snapshots copy markers deeply
+ok   Markers are magnet targets when enabled
+ok   Markers are not targets when their magnet is off
+ok   Magnets off: nothing snaps, markers included
+ok   A marker before zero is dropped and reported
+ok   Damaged marker repaired: sorted first, legal colour, bounded note
+ok   Older projects open with no markers and plain cuts
+ok   A default transition bumps the format to 16
+ok   Default transition survives reload
+ok   Damaged default transition is clamped
+ok   Locked projects without markers keep format 15
+21 passed, 0 failed

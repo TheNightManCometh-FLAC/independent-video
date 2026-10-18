@@ -1,0 +1,84 @@
+ok   Video clip bar
+ok   Photo clip gets Duration, no Speed or Volume
+ok   Freeze frame behaves like a photo
+ok   Video B-roll bar
+ok   Logo / photo overlay has no Speed or Volume
+ok   Title bar
+ok   Visualizer bar
+ok   Audio bar
+ok   Nothing selected: no item actions
+ok   main clip: icon "split" exists
+ok   main clip: icon "speed" exists
+ok   main clip: speed has a target
+ok   main clip: speed lands on an existing section "Timing"
+ok   main clip: icon "volume" exists
+ok   main clip: volume has a target
+ok   main clip: volume lands on an existing section "Selected sound"
+ok   main clip: icon "fx" exists
+ok   main clip: effects has a target
+ok   main clip: effects lands on an existing section "Stack"
+ok   main clip: icon "keyframe" exists
+ok   main clip: animate has a target
+ok   main clip: animate lands on an existing section "Motion"
+ok   main clip: icon "mark_in" exists
+ok   main clip: icon "more" exists
+ok   main clip: every button has its own icon
+ok   B-roll: icon "split" exists
+ok   B-roll: icon "speed" exists
+ok   B-roll: speed has a target
+ok   B-roll: speed lands on an existing section "Timing"
+ok   B-roll: icon "volume" exists
+ok   B-roll: volume has a target
+ok   B-roll: volume lands on an existing section "Selected sound"
+ok   B-roll: icon "fx" exists
+ok   B-roll: effects has a target
+ok   B-roll: effects lands on an existing section "Stack"
+ok   B-roll: icon "blend" exists
+ok   B-roll: blend has a target
+ok   B-roll: blend lands on an existing section "Picture"
+ok   B-roll: icon "keyframe" exists
+ok   B-roll: animate has a target
+ok   B-roll: animate lands on an existing section "Motion"
+ok   B-roll: icon "mark_in" exists
+ok   B-roll: icon "more" exists
+ok   B-roll: every button has its own icon
+ok   title: icon "pencil" exists
+ok   title: icon "text" exists
+ok   title: style has a target
+ok   title: style lands on an existing section "Style"
+ok   title: icon "keyframe" exists
+ok   title: animate has a target
+ok   title: animate lands on an existing section "Motion"
+ok   title: icon "split" exists
+ok   title: icon "mark_in" exists
+ok   title: icon "more" exists
+ok   title: every button has its own icon
+ok   visualizer: icon "bars" exists
+ok   visualizer: style has a target
+ok   visualizer: style lands on an existing section "Style"
+ok   visualizer: icon "spiral" exists
+ok   visualizer: echoes has a target
+ok   visualizer: echoes lands on an existing section "Echoes"
+ok   visualizer: icon "keyframe" exists
+ok   visualizer: animate has a target
+ok   visualizer: animate lands on an existing section "Motion"
+ok   visualizer: icon "split" exists
+ok   visualizer: icon "mark_in" exists
+ok   visualizer: icon "more" exists
+ok   visualizer: every button has its own icon
+ok   audio: icon "split" exists
+ok   audio: icon "volume" exists
+ok   audio: volume has a target
+ok   audio: volume lands on an existing section "Volume"
+ok   audio: icon "sliders" exists
+ok   audio: fades has a target
+ok   audio: fades lands on an existing section "Timing"
+ok   audio: icon "music" exists
+ok   audio: ducking has a target
+ok   audio: ducking lands on an existing section "Ducking"
+ok   audio: icon "mark_in" exists
+ok   audio: icon "more" exists
+ok   audio: every button has its own icon
+ok   Audio Volume goes to the Volume section, footage Volume to Selected sound
+ok   Animate stays on the item's own tab
+83 passed, 0 failed

@@ -1,0 +1,21 @@
+ok   no shapes: the mask is exactly the painted raster (3.5 masks unchanged)
+ok   gradient minus brush: top of the frame away from the paint is ~full (1.0)
+ok   gradient minus brush: inside the painted disc it's cut to 0
+ok   gradient minus brush: bottom is empty
+ok   gradient at mid-height is 0.5
+ok   order matters: the same brush below the gradient subtracts from nothing, the gradient wins
+ok   radial: full in the inner half (feather 0.5)
+ok   radial: none outside its edge
+ok   radial turned 90?: long axis is vertical
+ok   feather 0: a hard edge (1 just inside, 0 just outside)
+ok   linear value follows smoothstep (0.844 at a quarter)
+ok   invert then amount: 0.5 x (1 - shape)
+ok   Add = max, Subtract = m(1-v), Overlap = m?v
+ok   shapes carried through a rotate + scale + move frame change cover the same points (max diff 5.364418E-7, 151 of 2000 samples in soft edges)
+ok   JSON round trip
+ok   a damaged shape is dropped
+ok   a fixable shape is repaired (op, radii, feather)
+ok   Layer.copy deep-copies shapes (history can't be edited through the live layer)
+ok   Layer JSON keeps shapes, paint op and place
+ok   an old layer loads with no shapes, paint Add at the bottom
+20 passed, 0 failed

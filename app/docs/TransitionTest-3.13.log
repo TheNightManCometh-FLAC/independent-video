@@ -1,0 +1,15 @@
+ok   Every cut gets the dissolve
+ok   The last clip has no cut after it
+ok   Overlaps shorten the video by three transitions
+ok   Applying the same again changes nothing
+ok   Plain cuts everywhere restores the length
+ok   Locked clip's own transition is left alone
+ok   Cuts after it still change
+ok   The result passes the central lock check
+ok   Cuts that would move a locked clip are skipped
+ok   No default: adding a clip leaves plain cuts
+ok   Inserted between two clips: both new cuts get the default
+ok   Appended clip: the cut before it gets the default
+ok   An existing transition is kept
+ok   A clip with nothing after it gets no outgoing transition
+14 passed, 0 failed

@@ -1,0 +1,20 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+ok   Audio EOS consumed while video finishes is remembered
+ok   Repeated audio drains never ask for a second EOS
+ok   The audio EOS output buffer was released exactly once
+ok   Final drain waits for an EOS that really has not arrived
+ok   EOS first seen in final drain is also sticky
+ok   Nonblocking empty poll does not falsely mark audio finished
+ok   An initially empty poll can later reach EOS
+ok   Video EOS is remembered across nonblocking and final drains
+ok   A final AAC packet carrying EOS is written before completion
+ok   Final AAC packet is neither duplicated nor dequeued again
+ok   Audio watchdog counts consecutive stalls, resetting on output progress
+ok   Video watchdog resets on output progress
+ok   Cancellation interrupts audio finishing without polling the codec
+ok   Cancellation interrupts video finishing
+ok   PCM frames are fed before exactly one input EOS
+ok   Input and output EOS remain separate, monotonic states
+ok   A genuinely missing EOS still fails instead of producing a false success
+17 passed, 0 failed

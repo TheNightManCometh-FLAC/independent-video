@@ -1,0 +1,12 @@
+ok   19 transition types, old ids unchanged
+ok   Every type is in exactly one picker group
+ok   Old transitions keep the old format
+ok   A 3.14 transition bumps the format to 17 (3.13 would draw it as a wipe)
+ok   A 3.14 default transition bumps it too
+ok   Setup: the first cut is at 4 s
+ok   A plain cut moves onto the nearest beat (3.62 s)
+ok   Roll keeps the total length
+ok   A dissolve's middle lands on the beat
+ok   Sync off: no beats, no change
+ok   Out of reach: reported, not faked
+11 passed, 0 failed

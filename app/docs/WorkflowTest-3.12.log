@@ -1,0 +1,88 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /workspace/scratch/c950ba4c7bee/work/Strata/tests/WorkflowTest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+ok   B-roll splits into two independently selectable items
+ok   B-roll split leaves main footage and project duration alone
+ok   B-roll cut has no timeline gap or overlap
+ok   2x B-roll cut maps to exact source footage
+ok   Export audio source out matches both cut halves
+ok   Source frame after cut is unchanged
+ok   B-roll Drift continues through the cut (1.399999976158142)
+ok   B-roll transform channel 0 stays on footage (48.28125)
+ok   B-roll transform channel 1 stays on footage (58.28125)
+ok   B-roll transform channel 2 stays on footage (1.95703125)
+ok   B-roll transform channel 3 stays on footage (38.28125)
+ok   B-roll transform channel 4 stays on footage (0.521484375)
+ok   Cut adds no second entrance or premature exit fade
+ok   Connected second half stays at cut after anchor refresh
+ok   Split grade copies are independent (0.20000000298023224)
+ok   Undo snapshot retains original unsplit B-roll
+ok   A B-roll edge refuses a zero-length split
+ok   Main mode 0 keeps automation phase and keys (0.372314453125)
+ok   Main mode 0 has no fade-out introduced at cut (0.1949218213558197)
+ok   Save/open mode 0 preserves edited automation (0.372314453125)
+ok   Edited automation retains negative local start
+ok   Main mode 1 keeps automation phase and keys (2.23388671875)
+ok   Main mode 1 has no fade-out introduced at cut (0.3898436427116394)
+ok   Save/open mode 1 preserves edited automation (2.23388671875)
+ok   Edited automation retains negative local start
+ok   Main mode 2 keeps automation phase and keys (2.23388671875)
+ok   Main mode 2 has no fade-out introduced at cut (0.48730435967445374)
+ok   Save/open mode 2 preserves edited automation (2.23388671875)
+ok   Edited automation retains negative local start
+ok   Trimmed B-roll head moves start while tail stays
+ok   B-roll head trim retains Step phase (1.600000023841858)
+ok   Main head trim retains drift on the same source frame (1.399999976158142)
+ok   Fully trimmed automation range stays inactive (0.0)
+ok   Removed range does not become the whole target on save
+ok   Picture fade through cut 0 (0.0833333358168602)
+ok   Sound fade through cut 0 (0.0833333358168602)
+ok   Picture fade through cut 1 (0.33333298563957214)
+ok   Sound fade through cut 1 (0.33333298563957214)
+ok   Picture fade through cut 2 (0.3333333432674408)
+ok   Sound fade through cut 2 (0.3333333432674408)
+ok   Picture fade through cut 3 (0.33416667580604553)
+ok   Sound fade through cut 3 (0.33416667580604553)
+ok   Picture fade through cut 4 (0.6000000238418579)
+ok   Sound fade through cut 4 (0.6000000238418579)
+ok   Picture fade through cut 5 (4.0000000467443897E-7)
+ok   Sound fade through cut 5 (4.0000000467443897E-7)
+ok   Load sanitation preserves long fade on a short cut (0.6000000238418579)
+ok   Actual export mixer does not restart fade or de-click at B-roll cut
+ok   One-frame overlay cut works at 30fps
+ok   Audio split preserves source range
+ok   Audio volume keys stay on the same samples (0.32499998807907104)
+ok   First amount key is actually created
+ok   Amount key interpolation (0.6000000238418579)
+ok   Decimal seconds input (1500000.0)
+ok   Minute/seconds input (1.235E8)
+ok   Frame timecode input (6.25E7)
+ok   Reject invalid time -1
+ok   Reject invalid time NaN
+ok   Reject invalid time Infinity
+ok   Reject invalid time 1:60
+ok   Reject invalid time 0:00:30
+ok   Reject invalid time abc
+ok   Reject invalid time 
+ok   Frame-exact timecode round trip 24/0
+ok   Frame-exact timecode round trip 24/1
+ok   Frame-exact timecode round trip 24/2
+ok   Frame-exact timecode round trip 24/123
+ok   Frame-exact timecode round trip 24/9001
+ok   Frame-exact timecode round trip 25/0
+ok   Frame-exact timecode round trip 25/1
+ok   Frame-exact timecode round trip 25/2
+ok   Frame-exact timecode round trip 25/123
+ok   Frame-exact timecode round trip 25/9001
+ok   Frame-exact timecode round trip 30/0
+ok   Frame-exact timecode round trip 30/1
+ok   Frame-exact timecode round trip 30/2
+ok   Frame-exact timecode round trip 30/123
+ok   Frame-exact timecode round trip 30/9001
+ok   Frame-exact timecode round trip 60/0
+ok   Frame-exact timecode round trip 60/1
+ok   Frame-exact timecode round trip 60/2
+ok   Frame-exact timecode round trip 60/123
+ok   Frame-exact timecode round trip 60/9001
+83 passed, 0 failed

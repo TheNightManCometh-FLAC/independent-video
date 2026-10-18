@@ -1,0 +1,33 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+ok   Trim start keeps the playhead frame
+ok   Trim end keeps the playhead frame with exclusive Out
+ok   Exact marks preserve exclusive Out
+ok   Validation leaves original marks unchanged
+ok   Duration preview reflects speed
+ok   Fast cut must retain one output frame
+ok   Reversed marks rejected
+ok   Negative source In rejected
+ok   Source Out beyond file rejected
+ok   Zero-length range rejected
+ok   Rounded endpoint fits actual source duration
+ok   One project frame valid at 24
+ok   Frame time input round-trips at 24
+ok   One project frame valid at 25
+ok   Frame time input round-trips at 25
+ok   One project frame valid at 30
+ok   Frame time input round-trips at 30
+ok   One project frame valid at 60
+ok   Frame time input round-trips at 60
+ok   Magnets include zero and playhead
+ok   Magnet targets include other clip edges
+ok   Magnet targets include other audio edges
+ok   Selected overlay does not snap to itself
+ok   Snap off has no magnetic targets
+ok   Snap off keeps arbitrary frame-aligned moves
+ok   Edge targets can be disabled independently
+ok   Selected audio is excluded
+ok   Enabled beat guide supplies music magnets
+ok   Beat magnets can be disabled
+ok   Building magnets never mutates the project
+30 passed, 0 failed

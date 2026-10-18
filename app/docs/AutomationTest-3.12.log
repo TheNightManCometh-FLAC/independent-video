@@ -1,0 +1,64 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /workspace/scratch/c950ba4c7bee/work/Strata/tests/AutomationTest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+ok   Embedded main audio drives pulse without adding a song (1.2999999523162842)
+ok   Embedded main audio drives flash without a beat guide (0.800000011920929)
+ok   B-roll follows its OWN audio instead of main (1.100000023841858)
+ok   B-roll source maps trim and speed (5000000.0)
+ok   No reaction before B-roll source starts (0.0)
+ok   No reaction after B-roll source ends (0.0)
+ok   Muted B-roll can be an explicitly pre-volume control (0.20000000298023224)
+ok   Follow volume suppresses muted B-roll (0.0)
+ok   Off disables B-roll reaction (1.0)
+ok   Clip grade uses clip-owned source (1.0)
+ok   B-roll grade uses B-roll-owned source (0.20000000298023224)
+ok   Changing beat guide does not change clip-owned grade (1.0)
+ok   An effect can select a named independent audio track (0.699999988079071)
+ok   Pre-volume ignores playback volume explicitly (0.699999988079071)
+ok   Post-volume follows a silent control track (0.0)
+ok   Per-link bypass restores base value (0.0)
+ok   Deleted/missing source never silently falls back to main (0.0)
+ok   Automation is inactive before its chosen range (0.0)
+ok   Automation fades in at range boundary (0.5)
+ok   Automation reaches full strength inside range (1.0)
+ok   Automation fades out at range boundary (0.5)
+ok   Automation returns to base after its range (0.0)
+ok   Amount keys interpolate during playback/scrub (0.5)
+ok   Amount keys hold the last value (1.0)
+ok   Undo copies cannot mutate live amount keys (0.0)
+ok   Link persistence keeps source and amount keys
+ok   Old project links retain legacy guide routing
+ok   Beat-only grade works without spectral features (1.0)
+ok   Local Step starts at target/range start (1.0)
+ok   Song-continuous Step remains available (2.0)
+ok   Local Drift resets at target start (0.5)
+ok   Continuous Drift measures source time (2.5)
+ok   Keep main preserves main sound (1.0)
+ok   Use B-roll replaces main sound inside segment (0.0)
+ok   Main sound returns outside B-roll (1.0)
+ok   Replacement crossfades instead of cutting at start (0.5)
+ok   Mix both leaves main sound enabled (1.0)
+ok   Hidden B-roll does not suppress main audio (1.0)
+ok   Project round trip keeps B-roll sound mode
+ok   Project round trip keeps reaction audio routing
+ok   Project round trip keeps independent grade routing
+ok   New project format protects routing against downgrade
+ok   Digital silence has zero level (0.0)
+ok   Digital silence has zero bass (0.0)
+ok   Digital silence has zero spectral bands (0.0)
+ok   Silence cannot generate a beat grid
+ok   Adaptive does not kill real audio with 2 dB dynamics
+ok   Real 120 BPM kicks produce a usable beat grid
+ok   Feature-derived silent beat analysis stays empty
+ok   Default opacity mapping has visible headroom (0.8500000238418579)
+ok   Move to all footage actually moves the selected effect
+ok   Moving scope retains B-roll as the explicit source
+ok   Moving scope preserves the automation's absolute time range
+ok   Moving scope preserves keyframe timeline positions
+ok   Actual export mixer silences main audio during replacement
+ok   Actual export mixer restores main audio outside replacement
+ok   Actual export mixer leaves main audio in Mix both mode
+ok   Fresh feature cache retains silence gating (0.0)
+ok   Old feature caches are invalidated after analysis fix
+59 passed, 0 failed

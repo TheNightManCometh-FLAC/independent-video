@@ -1,0 +1,13 @@
+scene 0: max diff 1/255, 0 px over 2/255
+scene 1: max diff 1/255, 0 px over 2/255
+scene 2: max diff 1/255, 0 px over 2/255
+scene 3: max diff 0/255, 0 px over 2/255
+exit 0
+scene 0: max diff 0/255, 0 px over 2/255
+scene 1: max diff 19/255, 458 px over 2/255
+         (distance textures: mean 4.7/255 over the 458 differing px)
+scene 2: max diff 22/255, 4 px over 2/255
+         (distance textures: mean 17.8/255 over the 4 differing px)
+scene 3: max diff 4/255, 29 px over 2/255
+         (distance textures: mean 3.1/255 over the 29 differing px)
+exit 0

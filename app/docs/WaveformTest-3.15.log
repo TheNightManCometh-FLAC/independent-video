@@ -1,0 +1,11 @@
+ok   Span finds the loud part
+ok   Span is order-agnostic
+ok   Span outside the file is silent
+ok   No peaks yet: no columns drawn
+ok   1x: the hit lands in column 10 of 50 (1.0-1.1 s)
+ok   2x: the hit moves to 0.5 s (column 10 of 50 over 2.5 s)
+ok   Volume scales the drawn height
+ok   Above 100 % fills the band but no more
+ok   B-roll uses its own speed map
+ok   Ramped clip maps forward and still shows the hit
+10 passed, 0 failed

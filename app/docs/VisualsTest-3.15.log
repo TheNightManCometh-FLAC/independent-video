@@ -1,0 +1,37 @@
+ok   a 3.14 visualizer is not 'new' (its project stays readable by 3.14)
+ok   bars rise towards the highs between kicks
+ok   unused bar texels stay empty
+ok   Bass range: every bar reads the low bands (all low)
+ok   the range maps to bands (0..18) and back to its name
+ok   full range is the 3.14 range
+ok   peak cap held above the bar just after a kick (0.41568628 < 0.9372549)
+ok   and falling 0.2 s later (0.8)
+ok   ridges row 3 (now) is the kick
+ok   ridges row 3 + 10 (100 ms ago) is between kicks
+ok   history rows only for styles that use them
+ok   bars leave the history rows empty
+ok   shockwave history: the current kick is at the front (texel 0)
+ok   and the kick half a second ago is half way along (1.0)
+ok   spatial smoothing pulls the top bar towards its neighbour
+ok   preset Neon bars sets its style and is recognised
+ok   preset Clean bars sets its style and is recognised
+ok   preset Trap circle sets its style and is recognised
+ok   preset Sunburst sets its style and is recognised
+ok   preset Unknown Pleasures sets its style and is recognised
+ok   preset Heat waterfall sets its style and is recognised
+ok   preset Hi-fi meter sets its style and is recognised
+ok   preset Phosphor scope sets its style and is recognised
+ok   preset Liquid mountain sets its style and is recognised
+ok   preset Bass shockwave sets its style and is recognised
+ok   preset Vapor tunnel sets its style and is recognised
+ok   preset Fire mirror sets its style and is recognised
+ok   preset Rainbow spiral sets its style and is recognised
+ok   preset Ghost scope sets its style and is recognised
+ok   every preset looks different
+ok   a preset with echoes keeps your echo count
+ok   a preset without echoes switches them off
+ok   JSON keeps the 3.15 options
+ok   a 3.14 visualizer loads with the 3.14 look
+ok   damaged options are repaired
+ok   a project using new styles is format 18
+36 passed, 0 failed

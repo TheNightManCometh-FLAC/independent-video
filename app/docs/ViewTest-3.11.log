@@ -1,0 +1,30 @@
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+ok   12 MP photo: double-tap from fit goes to exactly 100 %
+ok   a fitted-looking view (scale within 2 %) counts as fit
+ok   from any other zoom, double-tap goes back to fit
+ok   an 800 px image (fits at 1.32) goes to 2x fit, not to a smaller 100 %
+ok   2x fit is capped at 64
+ok   anchor keeps the tapped doc point under the finger
+ok   tap just inside the left edge: that pixel stays under the finger, no empty band (off -10.30303)
+ok   tap in the margin left of the image: the left edge snaps to the screen edge
+ok   tap in the margin right of the image: the right edge snaps to the screen edge
+ok   in the middle the anchor is kept
+ok   content smaller than the view is centred
+ok   readout 'Fit · 26%'
+ok   readout '100%'
+ok   readout below 10 % keeps a decimal ('6.5%', '2%')
+ok   200 MP photo: readout Fit · 6.5%, double-tap goes to 100 %
+ok   loupe magnifies 6x at fit
+ok   loupe at 100 % magnifies 6x (6 screen px per image px)
+ok   loupe at 800 % stops at 24 px per image px (3x)
+ok   loupe never shrinks the view
+ok   loupe sits above the finger, clear of it
+ok   near the top it flips below the finger
+ok   near a corner it stays fully on screen
+ok   mid-grey image: no clipping triangles
+ok   0.1 % of red at 255 lights the highlight triangle
+ok   0.03 % black does not light the shadow triangle
+ok   0.08 % black lights it
+ok   an empty histogram reports nothing
+27 passed, 0 failed

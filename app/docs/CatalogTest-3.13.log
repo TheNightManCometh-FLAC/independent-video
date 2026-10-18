@@ -1,0 +1,7 @@
+ok   A re-used entry moves to the front without a duplicate
+ok   Recent keeps the last 8
+ok   Keys round-trip through storage
+ok   Empty storage reads as an empty list
+ok   Damaged storage drops empties and duplicates
+ok   A key containing a newline is never stored
+6 passed, 0 failed

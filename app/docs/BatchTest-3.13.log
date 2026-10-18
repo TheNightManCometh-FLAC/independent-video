@@ -1,0 +1,71 @@
+ok   Selection resolves main, B-roll and audio kinds
+ok   Select all includes only timeline items
+ok   Selection span includes duration and gaps
+ok   Group move preserves relative spacing
+ok   Move preserves B-roll source In/Out
+ok   Move preserves audio source In/Out
+ok   Move preserves local motion keys
+ok   Move preserves volume key timing
+ok   Move preserves fade envelopes
+ok   Move preserves audio-control phase
+ok   Candidate construction leaves source project unchanged
+ok   Left boundary clamps the whole group
+ok   Group snaps without changing its spacing
+ok   Absolute group movement rejects main footage
+ok   Stale selection cannot partially edit
+ok   Empty selection rejected
+ok   Overlong placement rejected atomically
+ok   Moved connected items re-pin to the new source frame
+ok   Repeated anchor synchronization cannot undo the move
+ok   Duplicating a pair selects exactly the copies
+ok   Copies are placed after the selected range
+ok   Copied B-roll gets distinct item, layer and media IDs
+ok   Copied reactions use the copied audio source
+ok   Copied effect links use the copied audio source
+ok   Copied amount keys are independent
+ok   Copied motion keys cannot mutate originals
+ok   Copied anchors are aligned to their new placement
+ok   Main block copies are inserted after the originals
+ok   Mixed group keeps all copied time offsets
+ok   Copied connection follows the copied main clip
+ok   Copied audio IDs are not assigned as the global beat guide
+ok   Adjacent main clips reorder as a stable block
+ok   Mixed graphics/audio follow the block offset
+ok   Relative source mapping survives reordering
+ok   Nonadjacent main clips cannot silently collapse gaps
+ok   Nonadjacent duplication explains its limitation
+ok   Main block cannot move past the timeline edge
+ok   Mixed delete removes every selected item
+ok   Delete leaves original project available for undo
+ok   Deleting all main clips is an atomic candidate
+ok   Timing locks have independent item state
+ok   Lock state survives undo copies
+ok   Locked projects use a downgrade-protected format
+ok   Unlocked projects retain the compatible older format
+ok   Locked selected items cannot move
+ok   Locked selected items cannot be deleted
+ok   Deleting upstream footage cannot ripple a locked clip
+ok   Inserting copies cannot ripple a locked clip
+ok   Reordering equal-length unlocked clips can leave a lock untouched
+ok   Reordering cannot ripple a locked neighbor
+ok   Changing an unlocked clip detects movement of a locked later clip
+ok   Timing protection permits transforms, color and levels
+ok   Timing lock protects B-roll source range
+ok   Timing lock protects speed
+ok   Timing lock protects source replacement
+ok   Timing lock protects overlay duration
+ok   Timing lock protects audio trim
+ok   Timing lock protects anchor relationships
+ok   Explicit unlocking remains possible
+ok   Duplicate creates editable copies without unlocking originals
+ok   Locks survive production JSON mapping
+ok   Older projects default to unlocked items
+ok   Group magnets exclude every selected item
+ok   Reactive fixture has a nonzero evaluated effect
+ok   Audio-driven effect evaluates identically after group movement
+ok   Audio-driven effect evaluates identically in the copied group
+ok   Volume-driven automation remains aligned after group movement
+ok   Copied ramp retains its exact playback length
+ok   Copied ramp maps the same source frame
+ok   Copied ramp remains independently editable
+70 passed, 0 failed

@@ -1,0 +1,7 @@
+ok   1080p30 High H.264 = 0.25 bit per pixel per frame (15.6 Mbps)
+ok   HEVC asks for 60 % of that
+ok   4K60 Max is capped at 120 Mbps
+ok   8 Mbps for a minute is about 60 MB (+1 % container)
+ok   Audio adds 256 kbps
+ok   Sizes read naturally
+6 passed, 0 failed

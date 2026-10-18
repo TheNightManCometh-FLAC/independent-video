@@ -1,0 +1,22 @@
+ok   A look is added on top: children, then its group
+ok   The correction underneath is kept
+ok   Children get new ids and point at the group
+ok   Strength starts at 100 %
+ok   Normal structure needs no repair
+ok   Move the group earlier: the whole block moves
+ok   Can't move the first block earlier
+ok   A layer moves past a whole group
+ok   Move the group later past one layer
+ok   A child moves within its group
+ok   A child can't leave its group
+ok   Duplicating a group copies its block after it
+ok   The copy's children belong to the copy
+ok   Deleting a group deletes its layers
+ok   Repair: orphan to top level, child moved to its group, empty group removed
+ok   Pasted stack keeps its look group with fresh ids
+ok   Ungroup keeps the layers at full strength
+ok   No groups: format unchanged
+ok   A look group bumps the video format to 17
+ok   Group, child link and Strength survive save and reload
+ok   Undo snapshots copy groups deeply
+21 passed, 0 failed

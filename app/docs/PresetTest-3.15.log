@@ -1,0 +1,7 @@
+ok   Names are trimmed
+ok   Names are one line
+ok   Empty names get a default
+ok   Long names are capped at 40
+ok   A saved curve reloads identically
+ok   The same curve fits clips of any length (relative to the footage)
+6 passed, 0 failed

@@ -1,0 +1,19 @@
+ok   insert at 1.5 s: A[0-1500]@0 S[3000-5000]@1500 A[1500-4000]@3500 B[1000-4000]@6000 C[0-5000]@9000
+ok   insert makes the track exactly 2 s longer
+ok   insert on the A|B cut: nothing is split (A[0-4000]@0 S[0-1000]@4000 B[1000-4000]@5000 C[0-5000]@8000)
+ok   insert a third of a frame after a cut uses the cut, no 1-frame sliver
+ok   insert past the end appends
+ok   overwrite 2 s at 3 s: A[0-3000]@0 S[0-2000]@3000 B[2000-4000]@5000 C[0-5000]@7000
+ok   overwrite keeps the length and everything after the range in place
+ok   overwrite spanning a whole clip removes it: A[0-3000]@0 S[0-5000]@3000 C[1000-5000]@8000
+ok   overwrite running past the end lengthens the track to its end
+ok   insert inside a 2x clip splits at the right footage (1.5 s in): A[0-4000]@0 B[1000-2500]@4000 S[0-1000]@4750 B[2500-4000]@5750 C[0-5000]@6500
+ok   a title connected to C moves 2 s later with it (11500 ms)
+ok   replace keeping timing: same id, length 3 s, footage from In (2000-5000)
+ok   replace keeps framing, grade, keys and transition
+ok   C keeps its place after a timing-preserving replace
+ok   replace near the end of a short source slides In back to fit (5000-8000)
+ok   a source shorter than the clip: reported, uses all of it
+ok   replace with the marked length
+ok   replace on a 2x clip takes twice the footage to keep 1.5 s
+18 passed, 0 failed

@@ -1,0 +1,46 @@
+ok   Saved version is listed
+ok   Named version retains its label
+ok   Fresh version passes integrity verification
+ok   Snapshot stores exact document bytes
+ok   Snapshot stores local source pixels
+ok   Snapshot stores mask pixels
+ok   Snapshot includes nested local assets
+ok   Snapshot excludes interrupted saves
+ok   Snapshot never contains its own version bank
+ok   Editing does not mutate saved source assets
+ok   Asset cleanup cannot remove an older saved mask
+ok   Second version does not copy previous history
+ok   Two versions have distinct directories
+ok   Version rename survives a fresh listing
+ok   Restoring publishes a separate project
+ok   Working project remains untouched
+ok   Restored copy has original document
+ok   Restored copy has a removed mask
+ok   Restored copy excludes version-only metadata
+ok   Repeated restores never overwrite a project
+ok   Damaged asset blocks restore
+ok   Failed restore leaves the original edit intact
+ok   Missing saved mask blocks restore
+ok   Escaping manifest paths are rejected
+ok   Empty version names are rejected
+ok   Missing document blocks version creation
+ok   Recovery-only project must be opened and saved first
+ok   Version storage failure cannot report success
+ok   Interrupted unpublished versions do not appear
+ok   Deleting moves the whole project to Trash
+ok   Saved versions follow the project into Trash
+ok   Trash can be enumerated again after restart
+ok   Deleting the same folder identity never destroys older Trash
+ok   Both deleted projects remain recoverable
+ok   Restore returns the original folder
+ok   Saved versions survive restoration
+ok   Restore handles a live-folder collision
+ok   Colliding restore preserves existing project bytes
+ok   Trash cannot restore outside Projects
+ok   Explicit permanent removal succeeds
+ok   Recovery copying refuses a recursive linked folder
+ok   Failed copy leaves no visible partial version
+ok   Video versions restore with the correct project kind
+ok   Video recovery preserves external media links exactly
+ok   Permanent removal deletes a link, not its target
+45 passed, 0 failed

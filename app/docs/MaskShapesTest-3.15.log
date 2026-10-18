@@ -1,0 +1,51 @@
+ok   rect: inside is 1
+ok   rect: outside is 0
+ok   rect: edge is half (AA centred on the outline)
+ok   rect round 1: the corner is cut
+ok   rect rotated 90?: tall
+ok   rect feather: 0.5 at the edge, ramps over the short half size
+ok   rect grow 0.5: edge pushed out by 15 px
+ok   rect outline: only a 12 px band around the edge
+ok   reveal 0.5 left to right: left half shown, right hidden
+ok   reveal from the centre: middle shown, corners hidden
+ok   4 sides: a diamond (point up)
+ok   star: the points are in, between the points is out
+ok   hexagon distance inside matches the half-plane distance (max err 5.932384E-6 px)
+ok   shape heart: texture 847x798 in 286 ms, covers 1622 samples
+ok   shape bolt: texture 703x893 in 204 ms, covers 550 samples
+ok   shape arrow: texture 862x762 in 221 ms, covers 859 samples
+ok   shape chevron: texture 834x834 in 161 ms, covers 1163 samples
+ok   shape cloud: texture 904x689 in 141 ms, covers 1242 samples
+ok   shape bubble: texture 845x808 in 202 ms, covers 1751 samples
+ok   shape drop: texture 703x893 in 168 ms, covers 1185 samples
+ok   shape moon: texture 792x849 in 246 ms, covers 761 samples
+ok   shape cross: texture 834x834 in 157 ms, covers 1245 samples
+ok   shape flower: texture 837x822 in 170 ms, covers 1754 samples
+ok   shape ring: texture 834x834 in 151 ms, covers 1172 samples
+ok   shape shield: texture 780x854 in 151 ms, covers 1689 samples
+ok   shape leaf: texture 834x834 in 200 ms, covers 1526 samples
+ok   shape flame: texture 683x907 in 129 ms, covers 1032 samples
+ok   shape eye: texture 963x611 in 130 ms, covers 949 samples
+ok   shape wavy: texture 834x834 in 155 ms, covers 1585 samples
+ok   shape splat: texture 850x787 in 144 ms, covers 882 samples
+ok   shape gear: texture 834x834 in 157 ms, covers 1384 samples
+ok   shape burst: texture 834x834 in 155 ms, covers 1437 samples
+ok   shape frame: texture 834x834 in 151 ms, covers 1312 samples
+ok   freehand: centre and radius kept
+ok   freehand circle: the distance is ~0 on the drawn line (max 0.49597642 px)
+ok   freehand circle: deep inside is negative (-41.71063 px, clamped by the margin)
+ok   JSON round trip of polygon, text (with keys), freehand and rect
+ok   text fields kept
+ok   a loaded Polygon is valid
+ok   a loaded Text is valid
+ok   a loaded Shape is valid
+ok   a loaded Rectangle is valid
+ok   keyframes: halfway (smooth ease) is between the keys
+ok   keyframes: after the last key it holds
+ok   keyframes: the base shape isn't changed by evaluating
+ok   unanimated shape returns itself
+ok   a keyed shape makes at() return a private copy at that time
+ok   linear rotate 90 about its middle
+ok   box scale and move
+ok   raster slots 0-3, then disabled
+50 passed, 0 failed

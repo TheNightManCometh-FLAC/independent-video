@@ -1,0 +1,22 @@
+ok   video masks are at most 1920 px on the long side, in the frame's shape (1920x1080)
+ok   a project with an effect mask is saved as format 18 (older apps refuse it instead of dropping it)
+ok   strokes survive JSON (2 ops)
+ok   mask size survives JSON
+ok   shapes, keys, place and op survive JSON
+ok   copies (history) own their stroke list and keys
+ok   a photo layer has no stroke list (its masks stay PNG files)
+ok   unknown op and NaN points dropped, a huge brush clamped
+ok   at the first key the star is where it started
+ok   halfway it has travelled and turned (900.0, 90.0?)
+ok   after the last key it holds (reveal 25%)
+ok   the unkeyed shape is untouched
+ok   evaluating never changes the project
+ok   every shape offers Size, Move, Rotation, Reveal... as music targets
+ok   level 1 x amount 0.5 makes the star 50% bigger (100.0 -> 150.0)
+ok   the music works on a private copy
+ok   Move across shifts the shape by the amount in mask px
+ok   reveal is clamped to 0..1
+ok   library shapes keep their own proportions
+ok   Ellipse is a polygon with 64 sides (named Ellipse)
+ok   the 64-gon is within 0.2 px of the true ellipse at this size (0.04497015)
+21 passed, 0 failed

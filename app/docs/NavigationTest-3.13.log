@@ -1,0 +1,42 @@
+ok   New inspector uses first available task
+ok   New task opens at its own top
+ok   Same-task rebuild retains its scroll
+ok   Returning to task restores its prior scroll
+ok   Unrelated menu does not inherit clip scroll
+ok   Returning to clip restores its task and scroll
+ok   Explicit navigation opens target task at top
+ok   Unavailable task falls back to valid controls
+ok   Different item starts in a predictable task
+ok   Each item retains independent scroll
+ok   Reject invalid exact number: NaN
+ok   Reject invalid exact number: Infinity
+ok   Reject invalid exact number: -Infinity
+ok   Reject invalid exact number: 1e100
+ok   Reject invalid exact number: 
+ok   Reject invalid exact number:   
+ok   Reject invalid exact number: nope
+ok   Finite decimal number
+ok   Negative value remains available
+ok   Scientific numeric input
+ok   Fast B-roll stays shorter than 200ms instead of expanding
+ok   Speed retains exact source In and Out
+ok   Repeated live speed changes cannot drift source range
+ok   Slow speed retains footage and correct duration
+ok   Invalid overlay speed rejected: 0.0
+ok   Invalid overlay speed rejected: NaN
+ok   Invalid overlay speed rejected: Infinity
+ok   Invalid overlay speed rejected: 10.0
+ok   One damaged caption cannot abort the rest of the import
+ok   Overflowing caption time is skipped safely
+ok   Invalid minutes rejected
+ok   Valid long-hour captions are retained
+ok   Caption export is chronological after timeline edits
+ok   Caption export does not mutate project cue order
+ok   Windows caption lines are not double-converted
+ok   Sub-millisecond cue remains valid on export
+ok   Menu search handles mixed case
+ok   Menu search matches words in any order
+ok   Menu search trims repeated whitespace
+ok   Empty menu search returns all items
+ok   All query words are required
+41 passed, 0 failed
