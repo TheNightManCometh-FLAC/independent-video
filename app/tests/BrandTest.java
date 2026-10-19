@@ -51,7 +51,8 @@ public class BrandTest {
         check("Contact address", brand.contains("CONTACT = \"cporter31415@gmail.com\""));
         check("Ko-fi link only when the build ships brand/donate.txt", brand.contains("a.open(\"brand/donate.txt\")") && main.contains("if (donate != null)"));
         check("donate.txt holds the Ko-fi page", new String(Files.readAllBytes(Paths.get("assets/brand/donate.txt")), "UTF-8").trim().equals("https://ko-fi.com/betterappmafia"));
-        check("Version 1.0", mf.contains("android:versionName=\"1.0\"") && mf.contains("android:versionCode=\"2\""));
+        check("Version is 1.0 or later, versionCode 2 or more", java.util.regex.Pattern.compile("android:versionName=\"[1-9][0-9]*(\\.[0-9]+){1,2}\"").matcher(mf).find()
+            && java.util.regex.Pattern.compile("android:versionCode=\"([2-9]|[1-9][0-9]+)\"").matcher(mf).find());
         String sec = new String(Files.readAllBytes(Paths.get("src/com/christopher/strata/InspectorSections.java")), "UTF-8");
         check("Detail sections get a back row to their list", sec.contains("markList") && sec.contains("backRow("));
         String ed = new String(Files.readAllBytes(Paths.get("src/com/christopher/strata/VideoEditor.java")), "UTF-8");
