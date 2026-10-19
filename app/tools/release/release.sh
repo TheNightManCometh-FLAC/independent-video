@@ -48,7 +48,7 @@ if [[ "${1:-}" != --skip-tests ]]; then
   TMP=$(mktemp -d)
   for t in "$APP"/tests/*Test.java; do
     s=$(basename "$t" .java)
-    if (cd "$APP" && bash tests/run.sh "$s" "$TMP/$s") > "$TMP/$s.log" 2>&1; then echo "  pass $s"; else cat "$TMP/$s.log"; fail "$s failed"; fi
+    if (cd "$APP" && bash tests/run.sh "$s") > "$TMP/$s.log" 2>&1; then echo "  pass $s"; else cat "$TMP/$s.log"; fail "$s failed"; fi
   done
 fi
 
