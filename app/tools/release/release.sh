@@ -65,9 +65,12 @@ T=$HOME/.apklab-tools; PW=$(cat "$KEYS/password.txt")
 WANT=$(keytool -list -v -keystore "$KEYS/independent-video-upload.jks" -storepass "$PW" -alias upload 2>/dev/null | sed -n 's/.*SHA256: *//p')
 GOT=$(keytool -printcert -jarfile "$OUT/IndependentVideo-$NAME-play.aab" 2>/dev/null | sed -n 's/.*SHA256: *//p' | head -1)
 [[ -n "$WANT" && "$WANT" == "$GOT" ]] || fail "bundle is not signed with the upload key ($GOT)"
-unzip -l "$OUT/IndependentVideo-$NAME-play.aab" | grep -q 'assets/brand/donate.txt' && fail "Play bundle contains the Ko-fi link"
-unzip -l "$OUT/IndependentVideo-$NAME.apk" | grep -q 'assets/brand/donate.txt' || fail "GitHub APK is missing the Ko-fi link"
-"$T/aapt2" dump badging "$OUT/IndependentVideo-$NAME.apk" | grep -q "versionCode='$CODE' versionName='$NAME'" || fail "APK version mismatch"
+# (listings captured first: with pipefail, "unzip | grep -q" can fail on a match)
+AAB_LIST=$(unzip -l "$OUT/IndependentVideo-$NAME-play.aab"); APK_LIST=$(unzip -l "$OUT/IndependentVideo-$NAME.apk")
+BADGE=$("$T/aapt2" dump badging "$OUT/IndependentVideo-$NAME.apk")
+[[ "$AAB_LIST" == *assets/brand/donate.txt* ]] && fail "Play bundle contains the Ko-fi link"
+[[ "$APK_LIST" == *assets/brand/donate.txt* ]] || fail "GitHub APK is missing the Ko-fi link"
+[[ "$BADGE" == *"versionCode='$CODE' versionName='$NAME'"* ]] || fail "APK version mismatch"
 
 # 5. what goes where
 WHATS=$(cat "$NOTES")
