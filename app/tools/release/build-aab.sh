@@ -8,16 +8,17 @@ VARIANT=${1:?play or kofi}
 # Paths below are the cloud workspace these builds were made in; set SRC/SP for another machine.
 SRC=${SRC:-/home/claude/src/Strata}
 SP=${SP:-/tmp/claude-0/-home-claude/56423f1a-bc66-51ae-939f-1bd1ad0cbbdf/scratchpad}
-# SP/iv-keys must hold independent-video-upload.jks, password.txt and the PEM pair (never commit these).
-ST=$SP/stage-$VARIANT; OUTD=$SP/release; mkdir -p "$OUTD"
+# KEYS (default SP/iv-keys) must hold independent-video-upload.jks, password.txt and the PEM pair (never commit these).
+KEYS=${KEYS:-$SP/iv-keys}
+ST=$SP/stage-$VARIANT; OUTD=${OUTD:-$SP/release}; mkdir -p "$OUTD"
 T=$HOME/.apklab-tools
 SKILL=$(dirname "$(find / -path '*android-apk-builder/SKILL.md' -not -path '*-plus*' 2>/dev/null | head -1)")
-KS=$SP/iv-keys/independent-video-upload.jks; PW=$(cat $SP/iv-keys/password.txt)
+KS=$KEYS/independent-video-upload.jks; PW=$(cat "$KEYS/password.txt")
 export JAVA_TOOL_OPTIONS=
 
 rm -rf "$ST"; mkdir -p "$ST/keys"
 cp -r "$SRC/src" "$SRC/res" "$SRC/assets" "$SRC/AndroidManifest.xml" "$ST/"
-cp "$SP/iv-keys/debug.key.pem" "$SP/iv-keys/debug.cert.pem" "$ST/keys/"
+cp "$KEYS/debug.key.pem" "$KEYS/debug.cert.pem" "$ST/keys/"
 [[ "$VARIANT" == play ]] && rm -f "$ST/assets/brand/donate.txt"
 V=$(python3 -I -c "import xml.etree.ElementTree as E;print(E.parse('$ST/AndroidManifest.xml').getroot().attrib['{http://schemas.android.com/apk/res/android}versionName'])")
 NAME=IndependentVideo-$V-$VARIANT

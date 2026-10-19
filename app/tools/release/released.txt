@@ -1,0 +1,2 @@
+# versionCode versionName date — one line per packaged release (release.sh appends)
+2 1.0 2026-10-17

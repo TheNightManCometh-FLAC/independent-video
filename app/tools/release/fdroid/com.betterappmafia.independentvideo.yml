@@ -1,0 +1,33 @@
+Categories:
+  - Multimedia
+  - Graphics
+License: GPL-3.0-or-later
+AuthorName: Better App Mafia
+AuthorEmail: cporter31415@gmail.com
+WebSite: https://thenightmancometh-flac.github.io/independent-video/
+SourceCode: https://github.com/TheNightManCometh-FLAC/independent-video
+IssueTracker: https://github.com/TheNightManCometh-FLAC/independent-video/issues
+Changelog: https://github.com/TheNightManCometh-FLAC/independent-video/blob/HEAD/app/CHANGELOG.md
+Donate: https://ko-fi.com/betterappmafia
+
+AutoName: Independent Video
+
+RepoType: git
+Repo: https://github.com/TheNightManCometh-FLAC/independent-video.git
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 2
+    commit: COMMIT_WITH_FDROID_MODE
+    subdir: app
+    prebuild: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+    build:
+      - export ANDROID_JAR=$$SDK$$/platforms/android-35/android.jar
+      - export ANDROID_BUILD_TOOLS=$$SDK$$/build-tools/35.0.0
+      - bash build.sh fdroid
+    output: build/fdroid/IndependentVideo-unsigned.apk
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 2

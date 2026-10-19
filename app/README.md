@@ -37,6 +37,8 @@ bash build.sh preview      # "Independent Video x.y Test", signed with your Andr
 
 `preview` installs next to the Play version (`.preview` package). The `production` mode needs the official signing key, so it is only for Better App Mafia releases.
 
+`bash build.sh fdroid` builds the release app unsigned, the way F-Droid builds it (`build/fdroid/IndependentVideo-unsigned.apk`). How an update is packaged for Google Play, GitHub and F-Droid is in [`tools/release/RELEASING.md`](tools/release/RELEASING.md).
+
 ## Tests
 
 The model, timeline, audio and layout logic is pure Java and runs on desktop:
@@ -53,4 +55,8 @@ Bug reports and ideas are welcome as [issues](../../issues) or by email to cport
 
 ## License
 
-GPL-3.0 (see `LICENSE` at the repository root). You may fork, change and share it. If you distribute a modified version, you must publish its source under the same license. The bundled fonts keep their own SIL Open Font License terms.
+Copyright (C) 2026 Better App Mafia.
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. The full text is in `LICENSE` at the repository root (SPDX: `GPL-3.0-or-later`).
+
+In plain words: you may fork, change and share it. If you distribute a modified version, you must publish its source under the same license. The bundled fonts keep their own SIL Open Font License terms.

@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/price-free-111111?style=flat-square" alt="Free">
   <img src="https://img.shields.io/badge/data%20collected-none-111111?style=flat-square" alt="No data collected">
   <img src="https://img.shields.io/badge/export-up%20to%204K%2060fps-111111?style=flat-square" alt="Export up to 4K 60 fps">
-  <img src="https://img.shields.io/badge/license-GPL--3.0-111111?style=flat-square" alt="GPL-3.0">
+  <img src="https://img.shields.io/badge/license-GPL--3.0--or--later-111111?style=flat-square" alt="GPL-3.0-or-later">
   <img src="https://img.shields.io/badge/open%20source-Java%20%2B%20OpenGL%20ES-111111?style=flat-square" alt="Open source">
 </p>
 
@@ -80,7 +80,7 @@ The app has **no internet permission**, so it can't upload anything. It has no a
 
 ## Open source
 
-The whole app is in [`app/`](app/): plain Java on the Android framework, OpenGL ES 3 shaders and no third-party libraries. It's licensed [GPL-3.0](LICENSE), so you can read it, fork it and build it. Build steps and the project layout are in [`app/README.md`](app/README.md). Bug reports, ideas and pull requests are all welcome.
+The whole app is in [`app/`](app/): plain Java on the Android framework, OpenGL ES 3 shaders and no third-party libraries. It's licensed [GPL-3.0-or-later](LICENSE), so you can read it, fork it and build it. Build steps and the project layout are in [`app/README.md`](app/README.md). Bug reports, ideas and pull requests are all welcome.
 
 ---
 

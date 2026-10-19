@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-# Android SDK build without Gradle. Preview installs alongside the original app.
+# Android SDK build without Gradle.
+#   preview     "Independent Video x.y Test", own package id, signed with your debug key
+#   production  the release app, signed with the Better App Mafia upload key
+#   fdroid      the release app, unsigned (F-Droid builds and signs it)
 set -euo pipefail
 cd "$(dirname "$0")"
 MODE=${1:-preview}
@@ -26,8 +29,8 @@ for a,b in (('package="com.betterappmafia.independentvideo"','package="com.bette
     s=s.replace(a,b)
 Path(sys.argv[2]).write_text(s)
 PY
-elif [[ "$MODE" != production ]]; then
-  echo 'Usage: build.sh preview|production' >&2; exit 1
+elif [[ "$MODE" != production && "$MODE" != fdroid ]]; then
+  echo 'Usage: build.sh preview|production|fdroid' >&2; exit 1
 fi
 "$ANDROID_BUILD_TOOLS/aapt" package -f -m --custom-package com.christopher.strata -J "$OUT/generated" -M "$MANIFEST" -S res -I "$ANDROID_JAR"
 # Some runtimes contain the JDK compiler module but omit its launcher executable.
@@ -45,6 +48,12 @@ with zipfile.ZipFile(sys.argv[3],'a',zipfile.ZIP_DEFLATED) as z:
  for p in sorted(Path(sys.argv[2]).glob('*.dex')): z.write(p,p.name)
 PY
 "$ANDROID_BUILD_TOOLS/zipalign" -f 4 "$OUT/unsigned.apk" "$OUT/aligned.apk"
+if [[ "$MODE" == fdroid ]]; then
+  # F-Droid signs the APK itself. Fixed name so the F-Droid recipe can find it.
+  cp "$OUT/aligned.apk" "$OUT/IndependentVideo-unsigned.apk"
+  echo "$OUT/IndependentVideo-unsigned.apk"
+  exit 0
+fi
 if [[ "$MODE" == preview ]]; then
   # preview builds: the standard Android debug key (Android Studio creates it), or your own via env
   KEYSTORE="${KEYSTORE:-$HOME/.android/debug.keystore}"

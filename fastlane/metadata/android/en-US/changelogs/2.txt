@@ -1,0 +1,5 @@
+First public release.
+• Video: multi-track timeline, color grading, speed curves, titles and captions, beat-synced cuts and visualizers, 6-band EQ, export up to 4K 60 fps.
+• Photo: layers, editable masks, selections, heal and content-aware remove, RAW (DNG).
+• A resizable viewer: hide the toolbars, or turn the phone sideways for full screen.
+• No account, no internet access, nothing leaves your phone.

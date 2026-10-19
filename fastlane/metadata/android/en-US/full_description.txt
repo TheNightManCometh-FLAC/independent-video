@@ -1,0 +1,30 @@
+Independent Video is a video editor and a layered photo editor in one app, for vlogs, short films, music videos, edits for Reels and YouTube, and album art. There is no account and no sign-in, and the app has no internet access, so your footage, photos and projects stay on your phone.
+
+VIDEO
+• A multi-track timeline with frame-accurate trims, split, roll and slip, B-roll and picture-in-picture.
+• Titles and captions, with SRT import and export for subtitles.
+• Music when you want it: detect the beat of a song, snap cuts and markers to it, and put a transition's middle on the beat.
+• Speed you can shape: constant speed from 0.1× to 10×, or speed curves with presets, saved curves and exact points. Keep the pitch or let it follow like tape.
+• Color grading with layers: Light & Color, curves, levels, HSL, LUTs and 12 built-in looks with a strength slider, on one clip, all footage, or the whole video.
+• Effects through shapes, brush strokes or live text masks, with keyframes and music-driven automation.
+• Visualizers that follow the music: bars, rings, waveforms, mountains, LED meters and more, with palettes, presets and echoes.
+• Audio: a 6-band parametric EQ on every track and a master EQ, volume keyframes, fades and ducking.
+• A big viewer when you want it: drag it bigger, hide the toolbars, or turn the phone sideways for full screen.
+• Export at 720p, 1080p or 4K, 24 to 60 fps, saved to your gallery. Save any frame as a picture.
+
+PHOTO
+• Real layers: photos, text, fills and adjustment layers, with blend modes, groups and clipping masks.
+• Masks you can keep editing: brush, linear and radial gradients, shapes and text, plus color and brightness ranges.
+• Selections: rectangle, ellipse, lasso, polygon, brush and magic wand, with feather, grow, shrink and refine edge.
+• Retouching: heal, clone and content-aware remove.
+• Effects as editable layers, and the same looks, curves, levels and HSL tools as the video editor.
+• Opens JPEG, PNG, WebP, HEIF and RAW (DNG); exports full-resolution JPEG or PNG.
+
+YOUR WORK STAYS YOURS
+• No account, no ads, no tracking, no uploads.
+• Projects autosave, deleted projects go to a Trash you can restore from, and named versions let you go back to an earlier edit.
+
+OPEN SOURCE
+• Plain Java on the Android framework with OpenGL ES 3 shaders and no third-party libraries, licensed GPL-3.0-or-later.
+
+Independent Video is made by Better App Mafia.
