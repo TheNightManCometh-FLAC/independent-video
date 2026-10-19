@@ -18,7 +18,7 @@ Repo: https://github.com/TheNightManCometh-FLAC/independent-video.git
 Builds:
   - versionName: '1.0'
     versionCode: 2
-    commit: COMMIT_WITH_FDROID_MODE
+    commit: 9dd8e54b2a4e17279e1641e59b3a2d0947e8f978
     subdir: app
     prebuild: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
     build:
